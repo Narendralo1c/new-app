@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.container {
+    width: 600px;
+    height: 500px;
+    background: linear-gradient(360deg, rgb(219, 98, 98), rgb(116, 116, 224));
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.todo {
+    width: 70%;
+    height: auto;
+
+}
+
+.todo h1 {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    background: -webkit-linear-gradient(rgb(139, 6, 179), rgb(228, 91, 91), red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+
+}
+
+.todo h1 img {
+    width: 60px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+   
+}
+
+
+form {
+    background-color: rgb(196, 202, 202);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+input {
+    padding: 10px;
+    flex: 1;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+button {
+    border-radius: 10px;
+    border: none;
+    padding: 10px 30px;
+    background-color: rgb(246, 99, 45);
+    color: white;
+}
+
+ol {
+    padding-top: 30px;
+}
+
+ol li {
+    padding: 10px 10px;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    list-style: none;
+    font-size: 20px;
+    color: white;
+
+}
+
+ol li::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(79, 15, 15);
+    background-image: url(./download-removebg-preview.png);
+    background-size: contain;
+    top: 12px;
+    right: 420px;
+    text-decoration: line-through;
+
+}
+
+
+
+ol li span {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    font-weight: 900;
+    color: red;
+    border-radius: 10%;
+    text-align: center;
+}
+
+ol li span:hover {
+    background-color: rgb(208, 16, 16);
+    color: white;
+}
